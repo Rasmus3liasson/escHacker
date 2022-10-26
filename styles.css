@@ -5,5 +5,94 @@
 }
 
 body {
-  background-color: beige;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-section {
+  background-color: #011827;
+  display: flex;
+  width: 900px;
+  height: 144px;
+}
+.top-section .esc-logo {
+  width: 128px;
+  height: 82px;
+  margin: 26px 0 36px 27px;
+}
+.top-section h2 {
+  margin-left: 13px;
+  margin-top: 25px;
+  width: 78px;
+  height: 84px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hacker-image {
+  width: 100vh;
+  height: auto;
+  max-width: 480px;
+  max-height: 274px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+.buttons .on-site-btn {
+  justify-content: center;
+  width: 308px;
+  height: 66px;
+  background-color: #8acfe5;
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding: 19px 52px;
+  margin: 37px 50px 0px;
+}
+.buttons .online-btn {
+  white-space: nowrap;
+  width: 129px;
+  height: 20px;
+  color: #36769d;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 30px 138px;
+  text-decoration: underline;
+}
+
+.review {
+  display: flex;
+  margin: 70px 20px;
+  display: flex;
+  width: 343px;
+  height: 139px;
+}
+.review figure img {
+  width: 73px;
+  height: auto;
+}
+.review p {
+  font-style: italic;
+  margin: 0px 22px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.review .review-text {
+  width: 230px;
+}
+.review .reviev-info {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  white-space: nowrap;
 }/*# sourceMappingURL=styles.css.map */
