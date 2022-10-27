@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 }
 
 .buttons {
-  margin: 30px 0 0 90px;
+  margin: 37px 0 0 90px;
   display: flex;
   flex-direction: column;
 }
@@ -102,40 +103,46 @@ section h1 {
   margin-bottom: 30px;
   max-width: 440px;
 }
-section .challanges {
+section .challanges-section {
+  display: flex;
+  overflow: scroll;
+}
+section .challanges-section .challanges {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  width: 363px;
-  height: 446px;
-  margin: 30px;
+  min-width: 363px;
+  min-height: 446px;
+  margin-left: 50px;
 }
-section .challanges .challanger-box-image img {
+section .challanges-section .challanges .challanger-box-image img {
   width: 100%;
+  min-width: 363px;
   height: auto;
+  border-radius: 8px 8px 0 0;
 }
-section .challanges .rating {
+section .challanges-section .challanges .rating {
   padding: 0 18px;
 }
-section .challanges .rating p:first-child {
+section .challanges-section .challanges .rating p:first-child {
   font-size: 28px;
   margin-top: 12px;
 }
-section .challanges .rating-stars-text {
+section .challanges-section .challanges .rating-stars-text {
   display: flex;
 }
-section .challanges .rating-stars-text img {
+section .challanges-section .challanges .rating-stars-text img {
   width: 15px;
   height: 15px;
   margin: 0 5px;
 }
-section .challanges .rating-stars-text p {
+section .challanges-section .challanges .rating-stars-text p {
   font-size: 14px;
 }
-section .challanges .challange-info {
+section .challanges-section .challanges .challange-info {
   margin-top: 23px;
   font-size: 18px;
 }
-section .challanges .book-room {
+section .challanges-section .challanges .book-room {
   width: 180px;
   height: 44px;
   font-size: 16px;
@@ -144,4 +151,31 @@ section .challanges .book-room {
   background-color: #e3170a;
   border: none;
   border-radius: 4px;
+  margin: 30px 0 0 148px;
+}
+section .story-container {
+  width: 480px;
+  height: 500px;
+  background-color: #011827;
+  color: #ffffff;
+  margin-top: 56px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+section .story-container p {
+  margin: 95px 0 10px;
+  font-weight: 400;
+  font-size: 28px;
+}
+section .story-container button {
+  color: #8acfe5;
+  background-color: #011827;
+  border: #8acfe5 solid 2px;
+  padding: 19px 55px;
+  width: 308px;
+  height: 66px;
+  font-weight: 700;
+  font-size: 24px;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
