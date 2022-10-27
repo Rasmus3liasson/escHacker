@@ -13,6 +13,7 @@ $font-family: "Roboto", sans-serif;
 }
 body {
   font-family: $font-family;
+  font-style: normal;
 }
 .top-section {
   background-color: $dark-color;
@@ -38,31 +39,27 @@ body {
   }
 }
 .hacker-image {
-  width: 100vh;
+  min-width: 492px;
   height: auto;
-  max-width: 480px;
-  max-height: 274px;
 }
 .buttons {
+  margin: 30px 0 0 90px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: 0 auto;
+
   .on-site-btn {
-    justify-content: center;
-    width: 308px;
-    height: 66px;
     background-color: $lightblue-color;
     border-radius: 4px;
     border: none;
     font-family: $font-family;
     font-weight: 700;
     font-size: 24px;
-    text-align: center;
     padding: 19px 52px;
-    margin: 37px 50px 0px;
+    min-width: 308px;
+    max-width: 308px;
   }
   .online-btn {
+    margin: 30px 0 0 80px;
     white-space: nowrap;
     width: 129px;
     height: 20px;
@@ -71,49 +68,89 @@ body {
     border: none;
     font-weight: 700;
     font-size: 16px;
-    margin: 30px 138px;
     text-decoration: underline;
   }
 }
-.review{
-    display: flex;
-    
-    margin: 70px 20px;
-    display: flex;
-    width: 343px;
-    
-    height: 139px;
-    
-    figure img{
-        width: 73px;
-        height: auto;
-    }
-    p{
-        
-        font-style: italic;
-        margin: 0px 22px;
-       
-        font-weight: 400;
-        font-size: 24px;
-        
-      
-    }
-    .review-text{
-        width: 230px;
-    }
-    .reviev-info{
-        font-weight: 400;
-font-size: 18px;
-font-style: normal;
-white-space: nowrap;
+.review {
+  display: flex;
+  margin: 0 20px;
+  height: 139px;
+  margin-top: 20px;
+  figure img {
+    width: 73px;
+    height: auto;
+  }
+  p {
+    width: 300px;
 
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+  }
+  .review-info {
+    font-style: normal;
+    font-size: 18px;
+    white-space: nowrap;
+    margin-top: 7px;
+  }
+}
+section {
+  margin-top: 105px;
+  h1 {
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 20px;
+    font-style: normal;
+    margin-bottom: 30px;
+    max-width: 440px;
+  }
+  .challanges {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 363px;
+    height: 446px;
+    margin: 30px;
 
-   
-        
+    .challanger-box-image img {
+      width: 100%;
+      height: auto;
     }
-    
+    .rating {
+      padding: 0 18px;
+    }
 
-    
-  
-  
+    .rating p:first-child {
+      font-size: 28px;
+      margin-top: 12px;
+    }
+    .rating-stars-text {
+      display: flex;
+
+      img {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .challange-info {
+      margin-top: 23px;
+      font-size: 18px;
+    }
+    .book-room {
+      width: 180px;
+      height: 44px;
+      font-size: 16px;
+      font-weight: 700;
+      color: $white-color;
+      background-color: $red-color;
+      border: none;
+      border-radius: 4px;
+    }
+  }
 }
