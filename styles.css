@@ -13,17 +13,19 @@ body {
 .top-section {
   background-color: #011827;
   display: flex;
-  width: 900px;
+  align-items: center;
+  justify-content: flex-start;
   height: 144px;
+  min-width: 200px;
+  width: 100%;
 }
 .top-section .esc-logo {
   width: 128px;
   height: 82px;
-  margin: 26px 0 36px 27px;
+  margin-left: 20px;
 }
 .top-section h2 {
   margin-left: 13px;
-  margin-top: 25px;
   width: 78px;
   height: 84px;
   color: #ffffff;
@@ -33,14 +35,17 @@ body {
 }
 
 .hacker-image {
-  min-width: 492px;
+  width: 100%;
   height: auto;
 }
 
 .buttons {
-  margin: 37px 0 0 90px;
+  margin-top: 37px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .buttons .on-site-btn {
   background-color: #8acfe5;
@@ -49,59 +54,46 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  padding: 19px 52px;
-  min-width: 308px;
-  max-width: 308px;
+  width: 308px;
+  padding: 19px 40px;
 }
 .buttons .online-btn {
-  margin: 30px 0 0 80px;
-  white-space: nowrap;
-  width: 129px;
-  height: 20px;
   color: #36769d;
   background-color: transparent;
   border: none;
   font-weight: 700;
   font-size: 16px;
   text-decoration: underline;
+  margin-top: 30px;
 }
 
 .review {
   display: flex;
-  margin: 0 20px;
-  height: 139px;
-  margin-top: 20px;
+  margin-top: 80px;
+  padding: 0 15px;
 }
 .review figure img {
-  width: 73px;
-  height: auto;
+  padding-right: 15px;
 }
-.review p {
-  width: 300px;
-  margin-left: 20px;
+.review .review-text {
   font-weight: 400;
   font-size: 24px;
   font-style: italic;
+  width: 80%;
 }
-.review .review-info {
+.review .review-text .review-info {
+  margin-top: 8px;
   font-style: normal;
   font-size: 18px;
-  white-space: nowrap;
-  margin-top: 7px;
 }
 
-section {
-  margin-top: 105px;
-}
 section h1 {
   font-weight: 400;
   font-size: 32px;
-  text-align: center;
+  margin-left: 30px;
   white-space: nowrap;
-  margin-left: 20px;
+  margin-top: 105px;
   font-style: normal;
-  margin-bottom: 30px;
-  max-width: 440px;
 }
 section .challanges-section {
   display: flex;
@@ -112,7 +104,7 @@ section .challanges-section .challanges {
   border-radius: 8px;
   min-width: 363px;
   min-height: 446px;
-  margin-left: 50px;
+  margin: 40px 0 7px 40px;
 }
 section .challanges-section .challanges .challanger-box-image img {
   width: 100%;
@@ -154,28 +146,69 @@ section .challanges-section .challanges .book-room {
   margin: 30px 0 0 148px;
 }
 section .story-container {
-  width: 480px;
-  height: 500px;
   background-color: #011827;
   color: #ffffff;
+  height: 500px;
   margin-top: 56px;
   display: flex;
   text-align: center;
   flex-direction: column;
 }
 section .story-container p {
-  margin: 95px 0 10px;
   font-weight: 400;
   font-size: 28px;
+  margin: 95px 0 60px;
 }
 section .story-container button {
   color: #8acfe5;
   background-color: #011827;
   border: #8acfe5 solid 2px;
-  padding: 19px 55px;
+  width: 308px;
+  margin: 0 auto;
+  height: 66px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.computer-block img {
+  width: 100%;
+  height: auto;
+}
+
+.computer-text-section {
+  padding: 30px;
+}
+.computer-text-section h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.computer-text-section h3 {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.computer-text-section button {
+  background-color: #e3170a;
+  color: #ffffff;
+  border: none;
   width: 308px;
   height: 66px;
   font-weight: 700;
   font-size: 24px;
-  align-items: center;
+  margin: 60px 0 30px;
+}
+
+footer {
+  background-color: #011827;
+  color: #ffffff;
+  padding: 64px 22px;
+}
+footer .footer-text p {
+  margin-top: 7px;
+}
+footer .footer-links {
+  padding-top: 40px;
+}
+footer .footer-links p {
+  margin-top: 7px;
 }/*# sourceMappingURL=styles.css.map */
