@@ -224,13 +224,7 @@ body {
       font-size: 24px;
     }
     button {
-      background-color: $red-color;
-      color: $white-color;
-      border: none;
-      width: 308px;
-      height: 66px;
-      font-weight: 700;
-      font-size: 24px;
+      @include red-button;
       margin: 60px 0 30px;
     }
   }

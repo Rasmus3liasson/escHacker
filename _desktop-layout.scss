@@ -46,40 +46,24 @@
     width: 100%;
     height: auto;
   }
+  /* needs space beetween */
   .buttons {
-    margin-top: 37px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    z-index: 1;
+    margin-top: -38px;
 
     .on-site-btn {
-      background-color: $lightblue-color;
-      border-radius: 4px;
-      border: none;
-      font-family: $font-family;
-      font-weight: 700;
-      font-size: 24px;
-      width: 308px;
-      padding: 19px 40px;
+      @include lightblue-button;
     }
     .online-btn {
-      color: $darkblue-color;
-      background-color: transparent;
-      border: none;
-      font-weight: 700;
-      font-size: 16px;
-      text-decoration: underline;
-      margin-top: 30px;
+      @include red-button;
     }
   }
   .review-boxes {
     display: flex;
-
-    #hidden-mobile-layout {
-      display: none;
-    }
+    padding: 0 110px;
 
     .review {
       display: flex;
@@ -108,12 +92,12 @@
     h1 {
       font-weight: 400;
       font-size: 36px;
-      margin-top: 105px;
+      margin-top: 108px;
       text-align: center;
     }
     .challanges-section {
       display: flex;
-      overflow: scroll;
+      margin-top: 40px;
 
       .challanges {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -153,6 +137,7 @@
           margin-top: 23px;
           font-size: 18px;
         }
+        /* book this room button needs to be placed corecctly */
         .book-room {
           width: 180px;
           height: 44px;
@@ -162,10 +147,15 @@
           background-color: $red-color;
           border: none;
           border-radius: 4px;
-          margin: 30px 0 0 148px;
+          margin-top: 30px;
+          margin-bottom: 16px;
         }
       }
     }
+    #buttons-second {
+      margin: 87px 0;
+    }
+
     .story-container {
       background-color: $dark-color;
       color: $white-color;
@@ -178,16 +168,15 @@
       p {
         font-weight: 400;
         font-size: 28px;
-        margin: 95px 0 60px;
+        width: 602px;
+        margin: 95px auto;
       }
       button {
         color: $lightblue-color;
         background-color: $dark-color;
         border: $lightblue-color solid 2px;
-
         width: 308px;
         margin: 0 auto;
-
         height: 66px;
         font-weight: 700;
         font-size: 24px;
@@ -195,34 +184,34 @@
     }
   }
   .computer-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     img {
       width: 100%;
       height: auto;
+      max-height: 460px;
     }
-  }
-  .computer-text-section {
-    padding: 30px;
 
-    h2 {
-      font-weight: 700;
-      font-size: 32px;
-    }
-    h3 {
-      margin-top: 22px;
-      font-weight: 400;
-      font-size: 24px;
-    }
-    button {
-      background-color: $red-color;
-      color: $white-color;
-      border: none;
-      width: 308px;
-      height: 66px;
-      font-weight: 700;
-      font-size: 24px;
-      margin: 60px 0 30px;
+    .computer-text-section {
+      margin: 30px 100px;
+
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+      }
+      h3 {
+        margin-top: 22px;
+        font-weight: 400;
+        font-size: 24px;
+      }
+      button {
+        @include red-button;
+        margin: 60px 0 30px;
+      }
     }
   }
+
   footer {
     background-color: $dark-color;
     color: $white-color;

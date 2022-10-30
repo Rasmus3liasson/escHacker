@@ -40,13 +40,13 @@
     width: 100%;
     height: auto;
   }
+  /* needs space beetween */
   .buttons {
-    margin-top: 37px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    z-index: 1;
+    margin-top: -38px;
   }
   .buttons .on-site-btn {
     background-color: #8acfe5;
@@ -59,19 +59,18 @@
     padding: 19px 40px;
   }
   .buttons .online-btn {
-    color: #36769d;
-    background-color: transparent;
+    background-color: #e3170a;
+    color: #ffffff;
     border: none;
+    border-radius: 4px;
+    width: 308px;
+    height: 66px;
     font-weight: 700;
-    font-size: 16px;
-    text-decoration: underline;
-    margin-top: 30px;
+    font-size: 24px;
   }
   .review-boxes {
     display: flex;
-  }
-  .review-boxes #hidden-mobile-layout {
-    display: none;
+    padding: 0 110px;
   }
   .review-boxes .review {
     display: flex;
@@ -95,12 +94,12 @@
   section h1 {
     font-weight: 400;
     font-size: 36px;
-    margin-top: 105px;
+    margin-top: 108px;
     text-align: center;
   }
   section .challanges-section {
     display: flex;
-    overflow: scroll;
+    margin-top: 40px;
   }
   section .challanges-section .challanges {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -108,6 +107,7 @@
     min-width: 363px;
     min-height: 446px;
     margin: 40px 0 7px 40px;
+    /* book this room button needs to be placed corecctly */
   }
   section .challanges-section .challanges .challanger-box-image img {
     width: 100%;
@@ -146,7 +146,11 @@
     background-color: #e3170a;
     border: none;
     border-radius: 4px;
-    margin: 30px 0 0 148px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  section #buttons-second {
+    margin: 87px 0;
   }
   section .story-container {
     background-color: #011827;
@@ -160,7 +164,8 @@
   section .story-container p {
     font-weight: 400;
     font-size: 28px;
-    margin: 95px 0 60px;
+    width: 602px;
+    margin: 95px auto;
   }
   section .story-container button {
     color: #8acfe5;
@@ -172,26 +177,33 @@
     font-weight: 700;
     font-size: 24px;
   }
+  .computer-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
   .computer-block img {
     width: 100%;
     height: auto;
+    max-height: 460px;
   }
-  .computer-text-section {
-    padding: 30px;
+  .computer-block .computer-text-section {
+    margin: 30px 100px;
   }
-  .computer-text-section h2 {
+  .computer-block .computer-text-section h2 {
     font-weight: 700;
     font-size: 32px;
   }
-  .computer-text-section h3 {
+  .computer-block .computer-text-section h3 {
     margin-top: 22px;
     font-weight: 400;
     font-size: 24px;
   }
-  .computer-text-section button {
+  .computer-block .computer-text-section button {
     background-color: #e3170a;
     color: #ffffff;
     border: none;
+    border-radius: 4px;
     width: 308px;
     height: 66px;
     font-weight: 700;
@@ -417,6 +429,7 @@ body {
     background-color: #e3170a;
     color: #ffffff;
     border: none;
+    border-radius: 4px;
     width: 308px;
     height: 66px;
     font-weight: 700;
