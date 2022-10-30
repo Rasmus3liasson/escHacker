@@ -1,9 +1,6 @@
 @import "variables";
 
 @media screen and (min-width: 900px) {
-  body {
-    background-color: beige;
-  }
   header {
     background-color: $dark-color;
     color: $white-color;
@@ -35,7 +32,7 @@
       align-items: center;
 
       ul {
-        padding: 20px 114px;
+        padding: 20px 150px;
         white-space: nowrap;
         font-size: 24px;
       }
@@ -46,7 +43,7 @@
     width: 100%;
     height: auto;
   }
-  /* needs space beetween */
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -56,9 +53,11 @@
 
     .on-site-btn {
       @include lightblue-button;
+      margin-right: 9px;
     }
     .online-btn {
       @include red-button;
+      margin-left: 9px;
     }
   }
   .review-boxes {
@@ -97,7 +96,7 @@
     }
     .challanges-section {
       display: flex;
-      margin-top: 40px;
+      margin: 40px 54px 0 15px;
 
       .challanges {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -187,9 +186,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       max-height: 460px;
     }
 
@@ -207,8 +207,17 @@
       }
       button {
         @include red-button;
-        margin: 60px 0 30px;
+        margin: 20px 0 20px;
       }
+    }
+    #computer-text-section-girl {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+    }
+    #computer-girl {
+      grid-column-start: 2;
+      grid-column-end: 3;
     }
   }
 
@@ -216,15 +225,21 @@
     background-color: $dark-color;
     color: $white-color;
     padding: 64px 22px;
-    .footer-text {
-      p {
-        margin-top: 7px;
+    height: 467px;
+
+    .footer-elements {
+      display: flex;
+      margin: 70px 108px;
+
+      .footer-text {
+        width: 416px;
       }
-    }
-    .footer-links {
-      padding-top: 40px;
-      p {
-        margin-top: 7px;
+      .footer-links {
+        margin-left: 232px;
+        white-space: nowrap;
+        p {
+          margin-top: 3px;
+        }
       }
     }
   }
