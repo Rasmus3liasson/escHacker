@@ -106,6 +106,8 @@
   }
   section .challanges-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 40px 54px 0 15px;
   }
   section .challanges-section .challanges {
@@ -192,7 +194,7 @@
   .computer-block img {
     width: 100%;
     height: 100%;
-    max-height: 460px;
+    max-height: 150%;
   }
   .computer-block .computer-text-section {
     margin: 30px 100px;
@@ -236,13 +238,15 @@
   }
   footer .footer-elements {
     display: flex;
-    margin: 70px 108px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 106px;
   }
   footer .footer-elements .footer-text {
-    min-width: 416px;
+    max-width: 500px;
   }
   footer .footer-elements .footer-links {
-    margin-left: 232px;
+    margin-left: 132px;
     white-space: nowrap;
   }
   footer .footer-elements .footer-links p {
@@ -374,6 +378,9 @@ body {
   section .challanges-section {
     display: flex;
     overflow: scroll;
+  }
+  section .challanges-section::-webkit-scrollbar {
+    display: none;
   }
   section .challanges-section .challanges {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
