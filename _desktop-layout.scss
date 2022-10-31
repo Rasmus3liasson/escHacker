@@ -114,7 +114,6 @@
         border-radius: 8px;
         min-width: 363px;
         min-height: 446px;
-
         margin: 40px 0 7px 40px;
 
         .challanger-box-image img {
@@ -134,6 +133,7 @@
         }
         .rating-stars-text {
           display: flex;
+          margin-left: -5px;
 
           img {
             width: 15px;
@@ -242,6 +242,7 @@
     padding: 64px 22px;
     height: 467px;
     margin-top: 180px;
+    font-size: 18px;
 
     .footer-elements {
       display: flex;
@@ -251,12 +252,18 @@
 
       .footer-text {
         max-width: 500px;
+
+        p {
+          margin-top: 7px;
+        }
       }
       .footer-links {
         margin-left: 132px;
         white-space: nowrap;
         p {
-          margin-top: 3px;
+          &:first-of-type {
+            margin-top: 7px;
+          }
           &:nth-child(5) {
             margin-top: 17px;
           }

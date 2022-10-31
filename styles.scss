@@ -163,6 +163,7 @@ body {
         }
         .rating-stars-text {
           display: flex;
+          margin-left: -5px;
 
           img {
             width: 15px;
@@ -245,15 +246,20 @@ body {
     background-color: $dark-color;
     color: $white-color;
     padding: 64px 22px;
+    font-size: 18px;
     .footer-text {
-      p {
-        margin-top: 7px;
-      }
+      font-weight: 700;
     }
     .footer-links {
       padding-top: 40px;
       p {
         margin-top: 7px;
+        &:first-of-type {
+          margin-top: 7px;
+        }
+        &:nth-child(5) {
+          margin-top: 17px;
+        }
       }
     }
   }
