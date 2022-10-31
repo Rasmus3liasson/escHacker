@@ -1,6 +1,6 @@
 @import "variables";
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 801px) {
   header {
     background-color: $dark-color;
     color: $white-color;
@@ -24,6 +24,9 @@
         font-size: 40px;
         margin-top: 60px;
         white-space: nowrap;
+      }
+      .hamburger-icon {
+        display: none;
       }
     }
     nav {

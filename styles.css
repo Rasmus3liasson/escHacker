@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 801px) {
   header {
     background-color: #011827;
     color: #ffffff;
@@ -22,6 +22,9 @@
     font-size: 40px;
     margin-top: 60px;
     white-space: nowrap;
+  }
+  header .top-section .hamburger-icon {
+    display: none;
   }
   header nav {
     display: flex;
@@ -261,7 +264,7 @@ body {
   font-style: normal;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   header {
     background-color: #011827;
     color: #ffffff;
@@ -287,6 +290,13 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+  }
+  header .top-section .hamburger-icon {
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    width: 51px;
+    height: auto;
   }
   header nav {
     display: flex;
@@ -336,6 +346,8 @@ body {
   }
   .review-boxes .review {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
     padding: 0 15px;
   }
