@@ -47,11 +47,13 @@
   }
 
   .hacker-image {
+    display: none;
+  }
+  .hacker-image-desktop {
     width: 100%;
     height: auto;
     position: relative;
     z-index: -1;
-    margin-top: -180px;
   }
 
   .buttons {
@@ -124,42 +126,45 @@
         }
         .rating {
           padding: 0 18px;
-        }
 
-        .rating p:first-child {
-          font-size: 28px;
-          margin-top: 12px;
-        }
-        .rating-stars-text {
-          display: flex;
-          margin-left: -5px;
-
-          img {
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
+          & p:first-child {
+            font-size: 28px;
+            margin-top: 12px;
           }
-          p {
-            font-size: 14px;
-          }
-        }
-        .challange-info {
-          margin-top: 23px;
-          font-size: 18px;
-        }
+          .rating-stars-text {
+            display: flex;
+            margin-left: -5px;
 
-        /* book this room button needs to be placed corecctly */
-        .book-room {
-          width: 180px;
-          height: 44px;
-          font-size: 16px;
-          font-weight: 700;
-          color: $white-color;
-          background-color: $red-color;
-          border: none;
-          border-radius: 4px;
-          margin-top: 30px;
-          margin-bottom: 16px;
+            img {
+              width: 15px;
+              height: 15px;
+              margin: 0 5px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .challange-info {
+            margin-top: 23px;
+            font-size: 18px;
+          }
+
+          /* book this room button needs to be placed corecctly */
+          .book-room {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 44px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $white-color;
+            background-color: $red-color;
+            border: none;
+            border-radius: 4px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+          }
         }
       }
     }

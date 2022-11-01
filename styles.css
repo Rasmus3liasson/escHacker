@@ -41,11 +41,13 @@
     color: #8acfe5;
   }
   .hacker-image {
+    display: none;
+  }
+  .hacker-image-desktop {
     width: 100%;
     height: auto;
     position: relative;
     z-index: -1;
-    margin-top: -180px;
   }
   .buttons {
     display: flex;
@@ -57,6 +59,7 @@
   }
   .buttons .on-site-btn {
     background-color: #8acfe5;
+    color: #011827;
     border-radius: 4px;
     border: none;
     font-family: "Roboto", sans-serif;
@@ -116,7 +119,6 @@
     border-radius: 8px;
     min-width: 363px;
     min-height: 446px;
-    /* book this room button needs to be placed corecctly */
   }
   section .challanges-section .challanges .challanger-box-image img {
     width: 100%;
@@ -126,28 +128,32 @@
   }
   section .challanges-section .challanges .rating {
     padding: 0 18px;
+    /* book this room button needs to be placed corecctly */
   }
   section .challanges-section .challanges .rating p:first-child {
     font-size: 28px;
     margin-top: 12px;
   }
-  section .challanges-section .challanges .rating-stars-text {
+  section .challanges-section .challanges .rating .rating-stars-text {
     display: flex;
     margin-left: -5px;
   }
-  section .challanges-section .challanges .rating-stars-text img {
+  section .challanges-section .challanges .rating .rating-stars-text img {
     width: 15px;
     height: 15px;
     margin: 0 5px;
   }
-  section .challanges-section .challanges .rating-stars-text p {
+  section .challanges-section .challanges .rating .rating-stars-text p {
     font-size: 14px;
   }
-  section .challanges-section .challanges .challange-info {
+  section .challanges-section .challanges .rating .challange-info {
     margin-top: 23px;
     font-size: 18px;
   }
-  section .challanges-section .challanges .book-room {
+  section .challanges-section .challanges .rating .book-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 180px;
     height: 44px;
     font-size: 16px;
@@ -320,6 +326,9 @@ body {
     width: 100%;
     height: auto;
   }
+  .hacker-image-desktop {
+    display: none;
+  }
   .buttons {
     margin-top: 37px;
     display: flex;
@@ -330,6 +339,7 @@ body {
   }
   .buttons .on-site-btn {
     background-color: #8acfe5;
+    color: #011827;
     border-radius: 4px;
     border: none;
     font-family: "Roboto", sans-serif;
@@ -356,7 +366,6 @@ body {
   .review-boxes .review {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 80px;
     padding: 0 15px;
   }
@@ -377,7 +386,7 @@ body {
   section h1 {
     font-weight: 400;
     font-size: 36px;
-    margin-top: 105px;
+    margin: 105px 20px 0;
     text-align: center;
   }
   section .challanges-section {
@@ -407,23 +416,23 @@ body {
     font-size: 28px;
     margin-top: 12px;
   }
-  section .challanges-section .challanges .rating-stars-text {
+  section .challanges-section .challanges .rating .rating-stars-text {
     display: flex;
     margin-left: -5px;
   }
-  section .challanges-section .challanges .rating-stars-text img {
+  section .challanges-section .challanges .rating .rating-stars-text img {
     width: 15px;
     height: 15px;
     margin: 0 5px;
   }
-  section .challanges-section .challanges .rating-stars-text p {
+  section .challanges-section .challanges .rating .rating-stars-text p {
     font-size: 14px;
   }
-  section .challanges-section .challanges .challange-info {
+  section .challanges-section .challanges .rating .challange-info {
     margin-top: 23px;
     font-size: 18px;
   }
-  section .challanges-section .challanges .book-room {
+  section .challanges-section .challanges .rating .book-room {
     width: 180px;
     height: 44px;
     font-size: 16px;
@@ -446,7 +455,7 @@ body {
   section .story-container p {
     font-weight: 400;
     font-size: 28px;
-    margin: 95px 0 60px;
+    margin: 95px 21px 60px;
   }
   section .story-container button {
     color: #8acfe5;
