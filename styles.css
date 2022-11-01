@@ -45,13 +45,15 @@
     height: auto;
     position: relative;
     z-index: -1;
-    margin-top: -110px;
+    margin-top: -180px;
   }
   .buttons {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     margin-top: -38px;
+    gap: 18px;
   }
   .buttons .on-site-btn {
     background-color: #8acfe5;
@@ -62,7 +64,6 @@
     font-size: 24px;
     width: 308px;
     padding: 19px 40px;
-    margin-right: 9px;
   }
   .buttons .online-btn {
     background-color: #e3170a;
@@ -73,7 +74,6 @@
     height: 66px;
     font-weight: 700;
     font-size: 24px;
-    margin-left: 9px;
   }
   .review-boxes {
     display: flex;
@@ -108,14 +108,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 54px 0 15px;
+    margin: 87px 53px 0px;
+    gap: 42px;
   }
   section .challanges-section .challanges {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     min-width: 363px;
     min-height: 446px;
-    margin: 40px 0 7px 40px;
     /* book this room button needs to be placed corecctly */
   }
   section .challanges-section .challanges .challanger-box-image img {
