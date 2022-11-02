@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables-mixin";
 
 @media screen and (min-width: 801px) {
   header {
@@ -29,19 +29,21 @@
         display: none;
       }
     }
-    nav {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $dark-color;
+    color: $white-color;
 
-      ul {
-        padding: 20px 0;
-        white-space: nowrap;
-        font-size: 24px;
-        transition: 0.4s;
-        &:hover {
-          color: $lightblue-color;
-        }
+    ul {
+      padding: 20px 0;
+      white-space: nowrap;
+      font-size: 24px;
+      transition: 0.4s;
+      &:hover {
+        color: $lightblue-color;
       }
     }
   }
@@ -52,7 +54,6 @@
   .hacker-image-desktop {
     width: 100%;
     height: auto;
-    position: relative;
     z-index: -1;
   }
 
@@ -82,6 +83,8 @@
 
       figure img {
         padding-right: 15px;
+        width: 96px;
+        height: auto;
       }
       .review-text {
         font-weight: 400;
@@ -115,16 +118,18 @@
       .challanges {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
-        min-width: 363px;
+        width: 363px;
         min-height: 446px;
+        position: relative;
 
         .challanger-box-image img {
           width: 100%;
-          min-width: 363px;
           height: auto;
           border-radius: 8px 8px 0 0;
         }
         .rating {
+          display: flex;
+          flex-direction: column;
           padding: 0 18px;
 
           & p:first-child {
@@ -133,7 +138,7 @@
           }
           .rating-stars-text {
             display: flex;
-            margin-left: -5px;
+            justify-content: space-evenly;
 
             img {
               width: 15px;
@@ -142,6 +147,8 @@
             }
             p {
               font-size: 14px;
+              margin-left: 115px;
+              white-space: nowrap;
             }
           }
           .challange-info {
@@ -149,9 +156,8 @@
             font-size: 18px;
           }
 
-          /* book this room button needs to be placed corecctly */
           .book-room {
-            display: flex;
+            display: block;
             justify-content: center;
             align-items: center;
             width: 180px;
@@ -162,8 +168,11 @@
             background-color: $red-color;
             border: none;
             border-radius: 4px;
-            margin-top: 30px;
-            margin-bottom: 16px;
+            position: absolute;
+            margin-top: 20px;
+            right: 12px;
+            bottom: 12px;
+            margin-top: 20px;
           }
         }
       }
@@ -212,7 +221,7 @@
     }
 
     .computer-text-section {
-      margin: 30px 100px;
+      margin: 60px 100px;
 
       h2 {
         margin-top: 20px;
@@ -220,13 +229,13 @@
         font-size: 32px;
       }
       h3 {
-        margin-top: 22px;
+        margin-top: 25px;
         font-weight: 400;
         font-size: 24px;
       }
       button {
         @include red-button;
-        margin: 20px 0 20px;
+        margin: 25px 0 25px;
       }
     }
     #computer-text-section-girl {
@@ -251,7 +260,7 @@
     .footer-elements {
       display: flex;
       justify-content: space-evenly;
-      align-items: flex-start;
+
       margin-top: 106px;
 
       .footer-text {
@@ -264,6 +273,7 @@
       .footer-links {
         margin-left: 132px;
         white-space: nowrap;
+
         p {
           &:first-of-type {
             margin-top: 7px;

@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables-mixin";
 @import "desktop-layout";
 
 * {
@@ -48,15 +48,15 @@ body {
         height: auto;
       }
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      ul {
-        display: none;
-        margin: 0 30px;
-      }
+    ul {
+      display: none;
+      margin: 0 30px;
     }
   }
 
@@ -133,7 +133,7 @@ body {
         border-radius: 8px;
         min-width: 363px;
         min-height: 446px;
-        margin: 40px 0 7px 40px;
+        margin: 40px 20px 7px 20px;
 
         .challanger-box-image img {
           width: 100%;
@@ -236,13 +236,17 @@ body {
     color: $white-color;
     padding: 64px 22px;
     font-size: 18px;
+
     .footer-text {
       font-weight: 700;
+      p {
+        margin-top: 7px;
+      }
     }
     .footer-links {
       padding-top: 40px;
+
       p {
-        margin-top: 7px;
         &:first-of-type {
           margin-top: 7px;
         }
