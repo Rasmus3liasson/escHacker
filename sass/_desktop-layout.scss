@@ -31,19 +31,23 @@
     }
   }
   nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     background-color: $dark-color;
     color: $white-color;
 
     ul {
-      padding: 20px 0;
-      white-space: nowrap;
-      font-size: 24px;
-      transition: 0.4s;
-      &:hover {
-        color: $lightblue-color;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      li {
+        list-style: none;
+        padding: 20px 0;
+        font-size: 24px;
+        transition: 0.4s;
+
+        &:hover {
+          color: $lightblue-color;
+        }
       }
     }
   }
@@ -276,11 +280,12 @@
         margin-left: 132px;
         white-space: nowrap;
 
-        p {
+        li {
+          list-style: none;
           &:first-of-type {
             margin-top: 7px;
           }
-          &:nth-child(5) {
+          &:nth-child(4) {
             margin-top: 17px;
           }
         }

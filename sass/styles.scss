@@ -237,7 +237,6 @@ body {
     font-size: 18px;
 
     .footer-text {
-      font-weight: 700;
       p {
         margin-top: 7px;
       }
@@ -245,11 +244,12 @@ body {
     .footer-links {
       padding-top: 40px;
 
-      p {
+      li {
+        list-style: none;
         &:first-of-type {
           margin-top: 7px;
         }
-        &:nth-child(5) {
+        &:nth-child(4) {
           margin-top: 17px;
         }
       }
