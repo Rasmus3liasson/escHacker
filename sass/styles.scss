@@ -11,6 +11,10 @@ body {
   font-family: $font-family;
   font-style: normal;
 }
+li,
+button {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 800px) {
   header {
@@ -200,7 +204,6 @@ body {
         border: $lightblue-color solid 2px;
         width: 308px;
         margin: 0 auto;
-
         height: 66px;
         font-weight: 700;
         font-size: 24px;
