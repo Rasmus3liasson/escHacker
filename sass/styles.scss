@@ -187,7 +187,7 @@ button {
     .story-container {
       background-color: $dark-color;
       color: $white-color;
-      height: 500px;
+      min-height: 500px;
       margin-top: 56px;
       display: flex;
       text-align: center;

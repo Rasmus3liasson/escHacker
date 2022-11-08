@@ -467,7 +467,7 @@ button {
   section .story-container {
     background-color: #011827;
     color: #ffffff;
-    height: 500px;
+    min-height: 500px;
     margin-top: 56px;
     display: flex;
     text-align: center;
