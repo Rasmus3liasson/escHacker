@@ -7,6 +7,7 @@ closeIcon.src = "images/logotype-images/close-icon.png";
 
 hamburgerIcon.addEventListener("click", function () {
   navMenu.classList.add("nav-menu-mobile");
+
   navMenu.appendChild(closeIcon);
 });
 
