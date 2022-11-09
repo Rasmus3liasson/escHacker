@@ -54,13 +54,57 @@ button {
     }
   }
   nav {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: $dark-color;
+    color: $white-color;
+    position: fixed;
+    top: 0;
+    //en ful Lösning då jag bara fick till margina på 2 sidor
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0px 0px 20px $dark-color;
 
-    ul {
-      display: none;
-      margin: 0 30px;
+    transform: scale(95%);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      li {
+        list-style: none;
+        padding: 20px 0;
+        font-size: 36px;
+        font-weight: 700;
+        &:active {
+          color: $lightblue-color;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  .nav-menu-mobile {
+    display: flex;
+    animation: navMenuMobile 0.4s ease-in-out;
+
+    .close-icon {
+      width: 45px;
+      height: auto;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+  }
+
+  @keyframes navMenuMobile {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 
