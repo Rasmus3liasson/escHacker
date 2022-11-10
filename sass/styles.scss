@@ -11,6 +11,7 @@ body {
   font-family: $font-family;
   font-style: normal;
 }
+
 li,
 button {
   cursor: pointer;
@@ -53,6 +54,7 @@ button {
       }
     }
   }
+
   nav {
     display: none;
     justify-content: center;
@@ -62,11 +64,11 @@ button {
     color: $white-color;
     position: fixed;
     top: 0;
-    //en ful Lösning då jag bara fick till margina på 2 sidor
+    //en ful Lösning då jag bara fick till margin på 2 sidor
     width: 100vw;
     height: 100vh;
     box-shadow: 0px 0px 20px $dark-color;
-    transform: scale(95%);
+    transform: scale(94%);
 
     a {
       color: inherit;
@@ -88,6 +90,7 @@ button {
   .nav-menu-mobile {
     display: flex;
     animation: navMenuMobile 0.4s ease-in-out;
+    z-index: 2;
 
     .close-icon {
       width: 45px;
@@ -99,12 +102,16 @@ button {
   }
 
   @keyframes navMenuMobile {
-    0% {
+    from {
       opacity: 0;
     }
-    100% {
+    to {
       opacity: 1;
     }
+  }
+  .background-opacity {
+    transition: 0.4s;
+    opacity: 0.5;
   }
 
   .hacker-image {
@@ -185,7 +192,6 @@ button {
         .challanger-box-image img {
           width: 100%;
           min-width: 363px;
-
           height: auto;
           border-radius: 8px 8px 0 0;
         }
