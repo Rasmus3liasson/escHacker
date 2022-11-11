@@ -37,3 +37,12 @@ $font-family: "Roboto", sans-serif;
   text-decoration: underline;
   margin-top: 30px;
 }
+@mixin a-tags {
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+@mixin button-click {
+  transform: scale(1.02);
+  transition: 0.1s;
+}

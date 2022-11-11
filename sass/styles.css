@@ -274,20 +274,19 @@
     max-width: 500px;
   }
   footer .footer-elements .footer-text p {
-    margin-top: 7px;
+    margin-top: 8px;
   }
   footer .footer-elements .footer-links {
     margin-left: 132px;
     white-space: nowrap;
   }
-  footer .footer-elements .footer-links li {
+  footer .footer-elements .footer-links ul {
+    margin-top: 8px;
+  }
+  footer .footer-elements .footer-links ul a {
+    color: inherit;
+    text-decoration: none;
     list-style: none;
-  }
-  footer .footer-elements .footer-links li:first-of-type {
-    margin-top: 7px;
-  }
-  footer .footer-elements .footer-links li:nth-child(4) {
-    margin-top: 17px;
   }
 }
 * {
@@ -305,6 +304,11 @@ body {
 li,
 button {
   cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.02);
+  transition: 0.1s;
 }
 
 @media screen and (max-width: 800px) {
@@ -341,11 +345,14 @@ button {
     width: 51px;
     height: auto;
   }
+  header .top-section .hamburger-icon:active {
+    transform: scale(1.02);
+    transition: 0.1s;
+  }
   nav {
     display: none;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #011827;
     color: #ffffff;
     position: fixed;
@@ -353,15 +360,16 @@ button {
     width: 100vw;
     height: 100vh;
     box-shadow: 0px 0px 20px #011827;
-    transform: scale(94%);
+    transform: scale(0.95);
   }
   nav a {
     color: inherit;
     text-decoration: none;
+    list-style: none;
   }
   nav a li {
     list-style: none;
-    padding: 20px 0;
+    padding: 45px 0;
     font-size: 36px;
     font-weight: 700;
   }
@@ -371,8 +379,8 @@ button {
   }
   .nav-menu-mobile {
     display: flex;
-    -webkit-animation: navMenuMobile 0.4s ease-in-out;
-            animation: navMenuMobile 0.4s ease-in-out;
+    -webkit-animation: navMenuMobile 0.6s ease-in-out;
+            animation: navMenuMobile 0.6s ease-in-out;
     z-index: 2;
   }
   .nav-menu-mobile .close-icon {
@@ -382,24 +390,22 @@ button {
     top: 30px;
     right: 30px;
   }
+  .nav-menu-mobile .close-icon:active {
+    transform: scale(1.02);
+    transition: 0.1s;
+  }
   @-webkit-keyframes navMenuMobile {
     from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
+      transform: scale(0.93);
     }
   }
   @keyframes navMenuMobile {
     from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
+      transform: scale(0.93);
     }
   }
   .background-opacity {
-    transition: 0.4s;
+    transition: 0.3s;
     opacity: 0.5;
   }
   .hacker-image {
@@ -581,18 +587,17 @@ button {
     font-size: 18px;
   }
   footer .footer-text p {
-    margin-top: 7px;
+    margin-top: 8px;
   }
   footer .footer-links {
-    padding-top: 40px;
+    margin-top: 40px;
   }
-  footer .footer-links li {
+  footer .footer-links ul {
+    margin-top: 8px;
+  }
+  footer .footer-links ul a {
+    color: inherit;
+    text-decoration: none;
     list-style: none;
-  }
-  footer .footer-links li:first-of-type {
-    margin-top: 7px;
-  }
-  footer .footer-links li:nth-child(4) {
-    margin-top: 17px;
   }
 }/*# sourceMappingURL=styles.css.map */

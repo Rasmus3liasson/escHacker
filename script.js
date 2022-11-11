@@ -1,28 +1,19 @@
 const closeIcon = document.createElement("img");
+const navMobile = document.querySelector("nav");
+const navMenuStyling = document.querySelectorAll(".nav-menu-background");
 
-closeIcon.classList.add("close-icon");
-closeIcon.src = "images/logotype-images/close-icon.png";
+document.querySelector(".hamburger-icon").addEventListener("click", (ev) => {
+  navMobile.classList.add("nav-menu-mobile");
+  navMobile.appendChild(closeIcon);
+  navMenuStyling[0].classList.add("background-opacity");
+  navMenuStyling[1].classList.add("background-opacity");
 
-document
-  .querySelector(".hamburger-icon")
-  .addEventListener("click", function () {
-    document.querySelector("nav").classList.add("nav-menu-mobile");
-    document.querySelector("nav").appendChild(closeIcon);
-    document
-      .querySelector(".nav-menu-background")
-      .classList.add("background-opacity");
-    document
-      .querySelector(".nav-menu-background-one")
-      .classList.add("background-opacity");
-  });
+  closeIcon.classList.add("close-icon");
+  closeIcon.src = "images/logotype-images/close-icon.png";
+});
 
-closeIcon.addEventListener("click", function () {
-  document.querySelector("nav").classList.remove("nav-menu-mobile");
-
-  document
-    .querySelector(".nav-menu-background")
-    .classList.remove("background-opacity");
-  document
-    .querySelector(".nav-menu-background-one")
-    .classList.remove("background-opacity");
+closeIcon.addEventListener("click", (ev) => {
+  navMobile.classList.remove("nav-menu-mobile");
+  navMenuStyling[0].classList.remove("background-opacity");
+  navMenuStyling[1].classList.remove("background-opacity");
 });

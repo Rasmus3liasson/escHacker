@@ -279,20 +279,17 @@
         max-width: 500px;
 
         p {
-          margin-top: 7px;
+          margin-top: 8px;
         }
       }
       .footer-links {
         margin-left: 132px;
         white-space: nowrap;
 
-        li {
-          list-style: none;
-          &:first-of-type {
-            margin-top: 7px;
-          }
-          &:nth-child(4) {
-            margin-top: 17px;
+        ul {
+          margin-top: 8px;
+          a {
+            @include a-tags;
           }
         }
       }
