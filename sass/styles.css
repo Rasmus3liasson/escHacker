@@ -370,10 +370,6 @@ button:active {
     font-size: 36px;
     font-weight: 700;
   }
-  nav a li:active {
-    color: #8acfe5;
-    opacity: 0.9;
-  }
   .nav-menu-mobile {
     display: flex;
     -webkit-animation: navMenuMobile 0.4s ease-in-out;
@@ -389,12 +385,12 @@ button:active {
   }
   @-webkit-keyframes navMenuMobile {
     from {
-      transform: scale(0.92);
+      transform: scale(0.91);
     }
   }
   @keyframes navMenuMobile {
     from {
-      transform: scale(0.92);
+      transform: scale(0.91);
     }
   }
   .background-opacity {

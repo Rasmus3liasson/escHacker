@@ -67,7 +67,6 @@ button:active {
     color: $white-color;
     position: fixed;
     top: 0;
-    //en ful Lösning då jag bara fick till margin på 2 sidor
     width: 100vw;
     height: 100vh;
     box-shadow: 0px 0px 20px $dark-color;
@@ -82,11 +81,6 @@ button:active {
         padding: 5px;
         font-size: 36px;
         font-weight: 700;
-
-        &:active {
-          color: $lightblue-color;
-          opacity: 0.9;
-        }
       }
     }
   }
@@ -107,7 +101,7 @@ button:active {
 
   @keyframes navMenuMobile {
     from {
-      transform: scale(0.92);
+      transform: scale(0.91);
     }
   }
   .background-opacity {
