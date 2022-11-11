@@ -4,10 +4,10 @@ const navMenuStyling = document.querySelectorAll(".nav-menu-background");
 
 document.querySelector(".hamburger-icon").addEventListener("click", (ev) => {
   navMobile.classList.add("nav-menu-mobile");
-  navMobile.appendChild(closeIcon);
   navMenuStyling[0].classList.add("background-opacity");
   navMenuStyling[1].classList.add("background-opacity");
 
+  navMobile.appendChild(closeIcon);
   closeIcon.classList.add("close-icon");
   closeIcon.src = "images/logotype-images/close-icon.png";
 });
