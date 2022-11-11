@@ -345,10 +345,6 @@ button:active {
     width: 51px;
     height: auto;
   }
-  header .top-section .hamburger-icon:active {
-    transform: scale(1.02);
-    transition: 0.1s;
-  }
   nav {
     display: none;
     justify-content: center;
@@ -360,7 +356,7 @@ button:active {
     width: 100vw;
     height: 100vh;
     box-shadow: 0px 0px 20px #011827;
-    transform: scale(0.95);
+    transform: scale(0.94);
   }
   nav a {
     color: inherit;
@@ -390,18 +386,14 @@ button:active {
     top: 30px;
     right: 30px;
   }
-  .nav-menu-mobile .close-icon:active {
-    transform: scale(1.02);
-    transition: 0.1s;
-  }
   @-webkit-keyframes navMenuMobile {
     from {
-      transform: scale(0.93);
+      transform: scale(0.92);
     }
   }
   @keyframes navMenuMobile {
     from {
-      transform: scale(0.93);
+      transform: scale(0.92);
     }
   }
   .background-opacity {

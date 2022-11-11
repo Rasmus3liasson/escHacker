@@ -55,9 +55,6 @@ button:active {
         right: 20px;
         width: 51px;
         height: auto;
-        &:active {
-          @include button-click;
-        }
       }
     }
   }
@@ -74,7 +71,7 @@ button:active {
     width: 100vw;
     height: 100vh;
     box-shadow: 0px 0px 20px $dark-color;
-    transform: scale(0.95);
+    transform: scale(0.94);
 
     a {
       @include a-tags;
@@ -104,16 +101,12 @@ button:active {
       position: absolute;
       top: 30px;
       right: 30px;
-
-      &:active {
-        @include button-click;
-      }
     }
   }
 
   @keyframes navMenuMobile {
     from {
-      transform: scale(0.93);
+      transform: scale(0.92);
     }
   }
   .background-opacity {
